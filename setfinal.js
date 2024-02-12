@@ -17,15 +17,16 @@ function calculateMoney(ticketSale) {
         else{ const len=name.length-1;
             const nameLastLetter=name[len].toLowerCase();      
             const lastLetter=['a','y','i','e','o','u','w'];
-            for(const letter of lastLetter){
-                if(letter.toLowerCase()==nameLastLetter){
+           
+                if(lastLetter.includes(nameLastLetter)){
                     return 'Good Name';
                 }else{
                     return 'Bad Name';
                 }
-            }
+          
         }     
         }
+        console.log(checkName('Saddey'))
 
 
         function deleteInvalids(array) {
